@@ -20,5 +20,5 @@ Ensure you have Vivado 2018.2 installed on your computer
 
 ## Others
 
-- For a more detailed report, look [here](!https://github.com/natmloclam/TI-83-/blob/main/EE2026_S2_06_Report.pdf)
-- Main source code is found in [here](![text](https://github.com/natmloclam/TI-83-/tree/main/CedricGroup/CedricGroup.srcs/sources_1/new))
+- For a more detailed report, look [here](https://github.com/natmloclam/TI-83-/blob/main/EE2026_S2_06_Report.pdf)
+- Main source code is found in [here](https://github.com/natmloclam/TI-83-/tree/main/CedricGroup/CedricGroup.srcs/sources_1/new)
