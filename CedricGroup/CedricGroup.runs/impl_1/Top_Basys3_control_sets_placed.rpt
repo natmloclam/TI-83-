@@ -1,0 +1,164 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Nov 10 14:19:21 2025
+| Host         : LAPTOP-F8O5LFML running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Basys3_control_sets_placed.rpt
+| Design       : Top_Basys3
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    95 |
+| Unused register locations in slices containing registers |   220 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      6 |            1 |
+|      8 |            6 |
+|     10 |           10 |
+|     12 |            4 |
+|     14 |           31 |
+|    16+ |           43 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             328 |           81 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             840 |          156 |
+| Yes          | No                    | No                     |            1120 |          258 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             316 |           56 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+--------------------------------------------------+------------------------------------------------+------------------+----------------+
+|      Clock Signal     |                   Enable Signal                  |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-----------------------+--------------------------------------------------+------------------------------------------------+------------------+----------------+
+|  clk_6p25mhz_BUFG     |                                                  |                                                |                3 |              6 |
+|  core/div10hz/CLK     |                                                  | core/led_pos[3]_i_1_n_0                        |                1 |              8 |
+|  clk_200hz            | core/kc/compute_wait_reg[0][0]                   |                                                |                1 |              8 |
+|  jc_graph/clk_25m     | core/max_ctrl/state_n_0                          | core/jc_graph/graph_inp/state0                 |                2 |              8 |
+| ~clk_6p25mhz_BUFG     |                                                  |                                                |                4 |              8 |
+|  jc_graph/clk_25m     |                                                  | core/jc_graph/graph_inp/state0                 |                2 |              8 |
+|  clk_200hz            | core/jc_graph/graph_inp/graph_input_digit_reg[0] | core/kc/graph_input_digit_reg[0]               |                1 |              8 |
+|  clk_6p25mhz_BUFG     |                                                  | core/u_res_seq/res_txt_flat[100]_i_1_n_0       |                3 |             10 |
+|  clk_6p25mhz_BUFG     |                                                  | core/u_res_seq/res_txt_flat[60]_i_1_n_0        |                4 |             10 |
+|  clk_6p25mhz_BUFG     |                                                  | core/u_res_seq/res_txt_flat[36]_i_1_n_0        |                4 |             10 |
+|  clk_6p25mhz_BUFG     |                                                  | core/u_res_seq/res_txt_flat[28]_i_1_n_0        |                5 |             10 |
+|  clk_6p25mhz_BUFG     |                                                  | core/u_res_seq/res_txt_flat[44]_i_1_n_0        |                3 |             10 |
+|  clk_6p25mhz_BUFG     |                                                  | core/u_res_seq/res_txt_flat[52]_i_1_n_0        |                4 |             10 |
+|  clk_6p25mhz_BUFG     |                                                  | core/u_res_seq/res_txt_flat[84]_i_1_n_0        |                3 |             10 |
+|  clk_6p25mhz_BUFG     |                                                  | core/u_res_seq/res_txt_flat[76]_i_1_n_0        |                4 |             10 |
+|  clk_6p25mhz_BUFG     |                                                  | core/u_res_seq/res_txt_flat[68]_i_1_n_0        |                3 |             10 |
+|  clk_6p25mhz_BUFG     |                                                  | core/u_res_seq/res_txt_flat[92]_i_1_n_0        |                3 |             10 |
+|  clk_200hz            | core/kc/in_len_reg[0][0]                         |                                                |                3 |             12 |
+|  clk_200hz            |                                                  | core/jc_graph/graph_inp/cur_row_reg[0]         |                2 |             12 |
+|  jc_graph/clk_25m     |                                                  | core/jc_graph/unit_gpcoord/oled_data_reg[2]_47 |                3 |             12 |
+|  clk_200hz            | core/kc/in_buf_reg[24][0]_0                      | core/kc/in_buf_reg[24][6]                      |                2 |             12 |
+|  clk_200hz            | core/kc/in_buf_reg[29][6][0]                     |                                                |                3 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[2][6][0]                      |                                                |                2 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[0][6][0]                      |                                                |                2 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[30][6][0]                     |                                                |                4 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[31][6][0]                     |                                                |                3 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[26][6][0]                     |                                                |                6 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[17][6][0]                     |                                                |                4 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[20][6][0]                     |                                                |                3 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[25][6][0]                     |                                                |                5 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[15][6][0]                     |                                                |                2 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[21][6][0]                     |                                                |                3 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[4][6][0]                      |                                                |                5 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[7][6][0]                      |                                                |                2 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[10][6][0]                     |                                                |                4 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[13][6][0]                     |                                                |                5 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[5][6][0]                      |                                                |                3 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[8][6][0]                      |                                                |                3 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[11][6][0]                     |                                                |                2 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[18][6][0]                     |                                                |                5 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[28][6][0]                     |                                                |                5 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[12][6][0]                     |                                                |                3 |             14 |
+|  clk_200hz            | core/kc/E[0]                                     |                                                |                3 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[6][6][0]                      |                                                |                3 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[9][6][0]                      |                                                |                2 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[19][6][0]                     |                                                |                4 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[23][6][0]                     |                                                |                3 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[16][6][0]                     |                                                |                5 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[3][6][0]                      |                                                |                2 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[27][6][0]                     |                                                |                3 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[14][6][0]                     |                                                |                3 |             14 |
+|  clk_200hz            | core/kc/in_buf_reg[1][6][0]                      |                                                |                2 |             14 |
+|  CLK_100MHZ_IBUF_BUFG | core/segdisp/div[15]_i_1_n_0                     |                                                |                3 |             18 |
+|  jc_graph/clk_1khz    | core/jc_graph/graph_inp/b_reg[0]_rep__0_0[0]     |                                                |                8 |             20 |
+|  jc_graph/clk_1khz    | core/jc_graph/graph_inp/c_reg[2]_rep_0[0]        |                                                |                8 |             20 |
+|  jc_graph/clk_1khz    | core/jc_graph/graph_inp/E[0]                     |                                                |                8 |             20 |
+|  jc_graph/clk_1khz    | core/jc_graph/graph_inp/d_reg[0]_1               |                                                |                7 |             20 |
+|  jc_graph/clk_1khz    |                                                  | core/jc_graph/max_ctrl/SR[0]                   |                4 |             22 |
+|  CLK_100MHZ_IBUF_BUFG |                                                  | core/segdisp/div[15]_i_1_n_0                   |                4 |             30 |
+|  clk_200hz            | core/kc/x_offset_diff_reg_0_sn_1                 |                                                |                6 |             32 |
+|  jc_graph/clk_1khz    | core/jc_graph/max_ctrl/x_min_reg[15]             |                                                |                8 |             32 |
+| ~clk_6p25mhz_BUFG     |                                                  | oled_left/frame_counter[16]_i_1__0_n_0         |                4 |             32 |
+|  jc_graph/clk_1khz    | core/jc_graph/max_ctrl/y_func2_0                 |                                                |                7 |             32 |
+|  jc_graph/clk_1khz    | core/jc_graph/unit_zoom/scale[0]_i_1_n_0         |                                                |                4 |             32 |
+|  jc_graph/clk_1khz    | core/jc_graph/graph_inp/pan_y_reg[15]            | core/jc_graph/graph_inp/pan_x_reg[0]           |                4 |             32 |
+|  jc_graph/clk_1khz    | core/jc_graph/graph_inp/pan_x_reg[15]            | core/jc_graph/graph_inp/pan_x_reg[0]           |                4 |             32 |
+| ~clk_6p25mhz_BUFG     |                                                  | oled_right/frame_counter[16]_i_1_n_0           |                4 |             32 |
+|  jc_graph/clk_25m     | core/jc_graph/unit_cur/E[0]                      |                                                |                6 |             32 |
+|  jc_graph/clk_25m     | core/jc_graph/max_ctrl/y_func2                   |                                                |                7 |             32 |
+|  jc_graph/clk_25m     | core/jc_graph/max_ctrl/x_max_reg[15]             |                                                |                5 |             32 |
+|  jc_graph/clk_25m     | core/jc_graph/max_ctrl/out[1]                    | core/jc_graph/graph_inp/state0                 |               11 |             32 |
+|  jc_graph/clk_25m     | core/jc_graph/max_ctrl/out[2]                    | core/jc_graph/graph_inp/state0                 |                7 |             32 |
+|  clk_200hz            | core/kc/x_squared0                               |                                                |                4 |             32 |
+|  clk_200hz            | core/kc/y_offset_diff_reg_0_sn_1                 |                                                |                6 |             32 |
+|  jc_graph/clk_1khz    |                                                  | core/jc_graph/graph_inp/counter_reg[0]         |                5 |             40 |
+|  jc_graph/clk_1khz    | core/jc_graph/unit_pan/delay[0]_i_2_n_0          | core/jc_graph/graph_inp/delay_reg[19]          |                7 |             40 |
+| ~clk_6p25mhz_BUFG     | oled_right/delay[0]_i_1__0_n_0                   |                                                |                5 |             40 |
+| ~clk_6p25mhz_BUFG     | oled_left/delay[0]_i_1__1_n_0                    |                                                |                5 |             40 |
+|  jc_graph/clk_1khz    |                                                  |                                                |               18 |             42 |
+|  jc_graph/clk_25m     |                                                  |                                                |                8 |             50 |
+|  CLK_100MHZ_IBUF_BUFG |                                                  | core/deriv_seg/show_c                          |                7 |             54 |
+|  jc_graph/clk_1khz    | core/jc_graph/max_ctrl/x_min_reg[15]             | core/jc_graph/max_ctrl/y_min_reg[15]           |                9 |             60 |
+|  jc_graph/clk_25m     | core/jc_graph/max_ctrl/x_max_reg[15]             | core/jc_graph/max_ctrl/y_max_reg[15]           |                9 |             60 |
+|  clk_200hz            |                                                  |                                                |               15 |             60 |
+|  CLK_100MHZ_IBUF_BUFG |                                                  | div_pix/clk_out                                |                8 |             62 |
+|  CLK_100MHZ_IBUF_BUFG |                                                  | core/div200hz/clk_out                          |                8 |             62 |
+|  CLK_100MHZ_IBUF_BUFG |                                                  | core/div10hz/clk_out                           |                8 |             62 |
+|  CLK_100MHZ_IBUF_BUFG |                                                  | core/jc_graph/unit_25m/clk_out                 |                8 |             62 |
+|  CLK_100MHZ_IBUF_BUFG |                                                  | core/jc_graph/unit_1khz/clk_out                |                8 |             62 |
+| ~clk_6p25mhz_BUFG     | oled_left/FSM_onehot_state[31]_i_1__0_n_0        |                                                |                8 |             64 |
+| ~clk_6p25mhz_BUFG     | oled_right/FSM_onehot_state[31]_i_1_n_0          |                                                |               10 |             64 |
+|  clk_200hz            | core/result_val                                  |                                                |               35 |             72 |
+| ~clk_6p25mhz_BUFG     |                                                  | oled_left/spi_word[39]_i_1__0_n_0              |               21 |             90 |
+| ~clk_6p25mhz_BUFG     |                                                  | oled_right/spi_word[39]_i_1_n_0                |               23 |             90 |
+|  CLK_100MHZ_IBUF_BUFG |                                                  |                                                |               33 |            162 |
++-----------------------+--------------------------------------------------+------------------------------------------------+------------------+----------------+
+
+
