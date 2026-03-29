@@ -12,7 +12,7 @@ A hardware-based graphing calculator implemented on the Digilent Basys 3 FPGA. T
 
 Ensure you have Vivado 2018.2 installed on your computer
 
-1. Download the latest release 
+1. Download the latest release and extract all
 2. Open `CedricGroup.xpr` in Vivado
 3. Connect your Basys 3 FPGA to your computer
 4. Navigate to the Program and Debug menu > Open Hardware Manager > Open target and select your device
